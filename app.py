@@ -10,5 +10,9 @@ def main():
 def hello():
     return 'I am good, how about you?'
 
+@app.route('/shout')
+def shout():
+    return 'This is from Openshift'
+
 if __name__ == "__main__":
     app.run()
